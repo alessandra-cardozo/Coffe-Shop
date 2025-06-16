@@ -53,11 +53,6 @@
 <li>CSS</li>
 <li>JavaScript</li>
 
-<h1 id='autor'> Autor  :smiley: </h1>
 
-![FOTO - 350PX](https://user-images.githubusercontent.com/94020264/183787084-858f7888-1be2-4329-add6-221bbab214d3.png)
-
-<p> Giulyano Santos :rocket: </p>
-<p> Feito com carinho por Giulyano Santos :wave: entre em contato: <a href='https://www.linkedin.com/in/giulyano-santos-a92b6917b/' style='text-decoration:none;' target="_blank" > Linkedin </a> </p>
 
 
