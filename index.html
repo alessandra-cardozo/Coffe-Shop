@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <!-- Link para ícones Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      xintegrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link para o arquivo de estilos customizados -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Links para a fonte Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Seção do Cabeçalho -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="./img/logo.png" alt="Logo da cafeteria" />
+      </a>
+
+      <!-- Barra de Navegação -->
+      <nav class="nav-bar">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produtos</a>
+        <a href="#review">Avaliações</a>
+        <a href="#contact">Contato</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <!-- Ícones de Ação (Pesquisa, Carrinho, Menu Mobile) -->
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <!-- Formulário de Pesquisa -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Pesquise aqui ..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <!-- Container de Itens do Carrinho -->
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="./img/cart-item-1.png" alt="Café Expresso no carrinho" />
+          <div class="content">
+            <h3>Item do carrinho 1</h3>
+            <div class="price">$15.99</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="./img/cart-item-2.png" alt="Café Latte no carrinho" />
+          <div class="content">
+            <h3>Item do carrinho 2</h3>
+            <div class="price">$14.89</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="./img/cart-item-3.png" alt="Café Gelado no carrinho" />
+          <div class="content">
+            <h3>Item do carrinho 3</h3>
+            <div class="price">$13.69</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="./img/cart-item-4.png" alt="Cappuccino no carrinho" />
+          <div class="content">
+            <h3>Item do carrinho 4</h3>
+            <div class="price">$12.59</div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Fazer checkout</a>
+      </div>
+    </header>
+
+    <!-- Seção Home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Café fresco pela manhã</h3>
+        <p>
+      **"Nada como o aroma de um café recém-passado para despertar os sentidos e acolher o dia com carinho. Na Cafena, cada xícara é preparada com grãos selecionados e toda a dedicação de quem ama o que faz. Dê uma pausa na rotina e mergulhe no sabor de um café feito especialmente para você."**
+
+        </p>
+        <a href="#" class="btn">Peça já o seu café!</a>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>Sobre</span> nós</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="./img/about-img.jpeg" alt="Xícara de café" />
+        </div>
+
+        <div class="content">
+          <h3>O que torna nosso café especial?</h3>
+          <p>
+            Em cada gota, a paixão se revela. Nosso café é especial porque cada
+            grão é cuidadosamente selecionado, cultivado com carinho e torrado
+            com maestria para despertar uma experiência única em sua xícara. Não
+            se trata apenas de uma bebida, mas de um ritual que acende os
+            sentidos, aquecendo o corpo e a alma.
+          </p>
+          <p>
+            Da terra à sua mesa, priorizamos a qualidade em cada etapa,
+            garantindo um aroma inconfundível e um sabor que permanece. É a
+            essência da dedicação, o toque artesanal e o compromisso em oferecer
+            a você mais do que um café: um momento de puro prazer e inspiração.
+            Descubra a diferença em cada gole e deixe-se envolver pela magia do
+            nosso café.
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção do Menu -->
+    <section class="menu" id="menu">
+      <h1 class="heading"><span>Nosso</span> menu</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/menu-1.png" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <div class="price">$19.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="./img/menu-2.png" alt="Cafe au Lait" />
+          <h3>Cafe au Lait</h3>
+          <div class="price">$18.50 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="./img/menu-3.png" alt="Expresso" />
+          <h3>Expresso</h3>
+          <div class="price">$17.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="./img/menu-4.png" alt="Iced coffee" />
+          <h3>Iced coffee</h3>
+          <div class="price">$16.50 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="./img/menu-5.png" alt="Cafe Latte" />
+          <h3>Cafe Latte</h3>
+          <div class="price">$15.99 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+
+        <div class="box">
+          <img src="./img/menu-6.png" alt="Mocha" />
+          <h3>Mocha</h3>
+          <div class="price">$14.85 <span>20.99</span></div>
+          <a href="#" class="btn">Adicione ao carrinho</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products" id="products">
+      <h1 class="heading"><span>Nossos</span> produtos</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/product-1.png" alt="Grãos de café Nicaragua" />
+          </div>
+          <div class="content">
+            <h3>Nicaragua coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$25.99 <span>$30.99</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/product-2.png" alt="Grãos de café Columbia" />
+          </div>
+          <div class="content">
+            <h3>Columbia coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$23.00 <span>$27.85</span></div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="./img/product-3.png" alt="Grãos de café Peru" />
+          </div>
+          <div class="content">
+            <h3>Peru coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$15.99 <span>$20.99</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Avaliações -->
+    <section class="review" id="review">
+      <h1 class="heading"><span>Avaliação</span> de clientes</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/quote-img.png" alt="Aspas" class="quote" />
+          <p>
+            "A cafeteria superou minhas expectativas! O aroma do café é
+            maravilhoso e o ambiente muito aconchegante. Só acho que o
+            atendimento poderia ser um pouquinho mais rápido, mas voltarei com
+            certeza!"
+          </p>
+          <img src="./img/pic-1.png" class="user" alt="Foto de João Santos" />
+          <h3>João Santos</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/quote-img.png" alt="Aspas" class="quote" />
+          <p>
+            "Simplesmente perfeito! Desde a primeira visita me apaixonei. Café
+            delicioso, atendimento impecável e um espaço encantador para relaxar
+            ou trabalhar. Recomendo de olhos fechados!"
+          </p>
+          <img src="./img/pic-2.png" class="user" alt="Foto de Helena Soares" />
+          <h3>Helena Soares</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/quote-img.png" alt="Aspas" class="quote" />
+          <p>
+            Gostei bastante! O café tem sabor especial e o lugar tem uma vibe
+            muito boa. Só achei o preço um pouco salgado para alguns itens, mas
+            ainda assim vale a visita
+          </p>
+          <img
+            src="./img/pic-3.png"
+            class="user"
+            alt="Foto de Jorge Ferreira"
+          />
+          <h3>Jorge Ferreira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Nosso</span> contato</h1>
+
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4878589999996!2d-46.634335!3d-23.55052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a3c9e6d0a7%3A0x6b7a5a8f2c3a5c6!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200%2C%20Brazil!5e0!3m2!1sen!2sus!4v1678250000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="">
+          <h3>Entre em contato</h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="Digite seu Nome" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="Digite seu email" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="Digite seu número de celular" />
+          </div>
+
+          <input type="submit" value="contact now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Seção de Blogs -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>Nossos </span>blogs</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img
+              src="./img/blog-1.jpeg"
+              alt="Pessoa preparando café em uma máquina"
+            />
+          </div>
+
+          <div class="content">
+            <a href="#" class="title">Faça seu próprio café</a>
+            <span>Feito por Fábio Garcia</span>
+            <p>
+              "Transforme o simples ato de preparar café em um ritual cheio de sabor e autenticidade."
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./img/blog-2.jpeg" alt="Grãos de café e uma xícara" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Dicas para cozinhar</a>
+            <span>Feito por Joana Silva</span>
+            <p>
+              "Receitas práticas, cheias de afeto e com aquele toque especial que só a Joana sabe dar."
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./img/blog-3.jpeg" alt="Xícara de café com arte latte" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Benefícios da Cafeína</a>
+            <span>Feito por Pablo Cabral</span>
+            <p>
+              "Descubra como a cafeína pode ser sua aliada no bem-estar e na energia do dia a dia."
+            </p>
+            <a href="#" class="btn">Saiba mais!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <section class="footer">
+      <div class="share">
+        <a href="#home" class="fab fa-facebook-f"></a>
+        <a href="#home" class="fab fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/alessandracardozodossantos/"
+          target="_blank"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/alessandra-cardozo-dos-santos-634529158"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://github.com/alessandra-cardozo"
+          target="_blank"
+          class="fab fa-github"
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu </a>
+        <a href="#review">Avaliações</a>
+        <a href="#contact">Contato</a>
+        <a href="#blogs">Blogs</a>
+      </div>
+
+      <div class="credit">Feito por <span>Alessandra Cardozo</span></div>
+    </section>
+    <!-- Link para o arquivo JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
